@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="icon" href="./img/heart.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="border border-bottom">
+        <nav class="navbar navbar-expand-lg nav-underline" id="header">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="index.html">Cake Shop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link link-secondary" aria-current="page" href="#">Home</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#catalogo-container">Our cakes</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#main-chefs">About us</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#delivery-container">Delivery</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#how-to-container">How to order</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#contact">Contact us</a></li>
+                </ul>
+              </div>
+              <form class="d-flex" role="search">
+                <button class="btn btn-outline-lila" type="submit">Login</button>
+              </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="btn-flotante d-none d-md-block">
+        <a href="#header"><i class="fas fa-chevron-up btn-flotante"></i></a>
+    </div>
+
+    <main>
+        <!--Hero-->
+        <section class="container-fluid" id="hero">
+            <div class="row hero hero-img align-items-sm-start align-items-md-center pt-4 ps-md-4 ps-xl-5">
+                <div class="col-12 text-center text-md-start hero-description">
+                    <h1 class="hero-title ps-xl-5">Homemade cakes <i class="fa-solid fa-heart"></i></h1>
+                    <button class="btn btn-outline-lila-dark d-none d-md-block ms-xl-5">Order now!</button>
+                </div>
+            </div>
+        </section>
+        
+        <!--Catalog-->
+        <section class="container padding-container" id="catalogo-container">
+            <div class="row mb-3 align-items-center">
+                <div class="col-3 col-md-4"><hr class="linea"></div>
+                <div class="col-6 col-md-4">
+                    <h2 class="title text-center">Our cakes</h2>
+                </div>
+                <div class="col-3 col-md-4"><hr class="linea"></div>
+            </div>
+            <div class="row">
+                <div class="d-none d-sm-block col-sm-12 mb-4">
+                    <ul class="nav nav-underline justify-content-center">
+                        <li class="nav-item"><a class="nav-link link-secondary" aria-current="page" href="#">Popular cakes</a></li>
+                        <li class="nav-item"><a class="nav-link link-secondary" href="#">Celebration cakes</a></li>
+                        <li class="nav-item"><a class="nav-link link-secondary" href="#">Baby cakes</a></li>
+                        <li class="nav-item"><a class="nav-link link-secondary" href="#">Wedding cakes</a></li>
+                        <li class="nav-item"><a class="nav-link link-secondary" href="#">Special cakes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-around mb-4">
+                <div class="card-catalog col-sm-12 col-md-6 col-lg-6 mb-3 shadow">
+                    <img src="img/cake-1.jpg" alt="Carrot-Cake">
+                    <div>
+                        <div class="card-text pt-2">Carrot Cake</div>
+                        <div class="card-precio pt-1">$ 180</div>
+                        <div class="card-footer py-3">
+                            <div class="btn btn-outline-lila me-1">Order</div>
+                            <div class="btn btn-outline-lila"> Add to <i class="fa-solid fa-heart icon"></i></div>
+                        </div>                            
+                    </div>
+                </div>
+                <div class="card-catalog col-sm-12 col-md-6 col-lg-6 mb-3 shadow">
+                    <img src="img/cake-2.jpg" alt="Chocolate-Cake">
+                    <div>
+                        <div class="card-text pt-2">Chocolate Cake</div>
+                        <div class="card-precio pt-1">$ 120</div>
+                        <div class="card-footer py-3">
+                            <div class="btn btn-outline-lila me-1">Order</div>
+                            <div class="btn btn-outline-lila"> Add to <i class="fa-solid fa-heart icon"></i></div>
+                        </div>                             
+                    </div>
+                </div>
+                <div class="card-catalog col-sm-12 col-md-6 col-lg-6 mb-3 shadow">
+                    <img src="img/cake-3.jpg" alt="Strawberry-Cake">
+                    <div>
+                        <div class="card-text pt-2">Strawberry Cake</div>
+                        <div class="card-precio pt-1">$ 150</div>
+                        <div class="card-footer py-3">
+                            <div class="btn btn-outline-lila me-1">Order</div>
+                            <div class="btn btn-outline-lila"> Add to <i class="fa-solid fa-heart icon"></i></div>
+                        </div>                               
+                    </div>
+                </div>
+                <div class="card-catalog col-sm-12 d-md-none d-lg-block col-lg-6 mb-3 shadow">
+                    <img src="img/cake-4.jpg" alt="Blueberries-Cake">
+                    <div>
+                        <div class="card-text pt-2">Blueberries Cake</div>
+                        <div class="card-precio pt-1">$ 190</div>
+                        <div class="card-footer py-3">
+                            <div class="btn btn-outline-lila me-1">Order</div>
+                            <div class="btn btn-outline-lila"> Add to <i class="fa-solid fa-heart icon"></i></div>
+                        </div>                              
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-none d-sm-block col-sm-4 col-lg-10"><hr class="linea"></div>
+                <div class="d-grid col-6 col-sm-4 col-md-4 col-lg-2 mx-auto">
+                    <button class="btn btn-outline-lila" type="button">View all</button>
+                </div>
+                <div class="d-none d-sm-block col-sm-4 d-lg-none"><hr class="linea"></div>
+            </div>          
+        </section>
+
+        <!--Video-->
+        <section class="container padding-container">
+            <div class="row pb-4 align-items-center">
+                <div class="d-none d-sm-block col-sm-3"><hr class="linea-complementary"></div>
+                <div class="col-12 col-sm-6">
+                    <h2 class="title text-center">How we create our cakes</h2>
+                </div>
+                <div class="d-none d-sm-block col-sm-3"><hr class="linea-complementary"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 container-video">
+                    <video src="img/cake-video(1080p).mp4" autoplay muted loop></video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"><hr class="linea-complementary"></div>
+            </div>
+        </section>
+
+        <!--About-->
+        <section class="container-fluid bg-lila my-5 container-fluid-about" id="main-chefs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 text-center text-md-end">
+                        <h4 class="chefs-about">About us</h4>
+                        <p class="chefs-name">Florence Smith</p>
+                        <p class="chefs-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque aliquid necessitatibus quas aspernatur repellat exercitationem, magnam nulla maiores et blanditiis, qui reprehenderit obcaecati accusantium deleniti unde possimus corporis optio!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eaque aliquid necessitatibus quas aspernatur repellat exercitationem, magnam nulla maiores et blanditiis, qui reprehenderit obcaecati accusantium deleniti unde possimus corporis optio. Sint eaque aliquid necessitatibus quas aspernatur repellat exercitationem, magnam nulla maiores et blanditiis, qui reprehenderit obcaecati accusantium deleniti unde possimus corporis optio!
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="img/chef.jpg" class="d-block w-100" alt="florence-smith-chef">
+                              </div>
+                              <div class="carousel-item ">
+                                <img src="img/chef-1.jpg" class="d-block w-100" alt="florence-smith-chef">
+                              </div>
+                              <div class="carousel-item ">
+                                <img src="img/chef-2.jpg" class="d-block w-100" alt="florence-smith-chef">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <!--<div class="col-md-6 col-lg-6 container-img">
+                        <img src="img/chef.jpg" alt="" class="">
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <!--Delivery-->
+        <section class="container padding-container" id="delivery-container">
+            <div class="row justify-content-around">
+                <div class="col-md-6 col-lg-6 col-xl-6 container-img mb-sm-3">
+                    <img src="img/cake-4.jpg" alt="Blueberries-Cake">
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8 text-center text-md-start">
+                            <h4 class="title mb-xl-5 pt-3 pt-sm-0">Delivery terms</h4>
+                            <div class="delivery-terms">
+                                <p>~ We use the speedest methods to ensure your goodies arrive in perfect condition to devour.</p>
+                                <p>~ Please allow between 2-3 working days from placing your order.</p>
+                                <p>~ All of our celebration cakes will be delivered to you on your chosen delivery date.</p>
+                                <p>~ Cakes can be stored in the fridge for 5 days and up to two weeks in the freezer.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12"><hr class="linea-complementary"></div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!--How to order-->
+        <section class="container padding-container pb-5" id="how-to-container">
+            <div class="row pb-4 align-items-center">
+                <div class="d-none d-sm-block col-sm-4"><hr class="linea"></div>
+                <div class="col-12 col-sm-4">
+                    <h2 class="title text-center">How to order</h2>
+                </div>
+                <div class="d-none d-sm-block col-sm-4"><hr class="linea"></div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <p class="order-text">These prices are a guide only and will vary depending on the level of detail and design required.</p>
+                    <p class="order-text">We also make cupcakes, eclairs, profiteroles, scones, slices and many other sweet delicacies.</p>
+                </div>
+            </div>
+           
+            <div class="row justify-content-center align-content-center text-center">
+                <div class="col-lg-12 my-3">
+                    <table class="table-price">
+                        <tr>
+                            <th>Custom Cake</th>
+                            <th>Macarons</th>
+                            <th>Tarts</th>
+                            <th>Dessert cups</th>
+                        </tr>
+                        <tr>
+                            <td>from $100</td>
+                            <td>from $2.50</td>
+                            <td>from $4.50</td>
+                            <td>from $3.50</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact us-->
+        <section class="container-fluid bg-lila container-fluid-about" id="contact">
+            <div class="container">
+                <div class="row pb-2 align-items-center">
+                    <div class="col-12 text-center text-sm-start col-sm-5 col-lg-4">
+                        <h2 class="title secondary">Contact us</h2>
+                    </div>
+                    <div class="d-none d-sm-block col-sm-7 col-lg-8"><hr class="linea-secondary"></div>                    
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center text-sm-start">
+                        <p class="contact-text secondary">Please get in touch if you have a specific sweet request, leave your contact information and we'll get back to you shortly.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <form class="row g-3 px-2" autocomplete="on" action="registrar.php" method="post" target=""> <!-- method="post" target="_self"  pe-4-->
+
+                            <div class="col-12 col-lg-6">
+                                <input type="text" class="form-control" name="name" aria-label="inputName" placeholder="Name" required>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <input type="email" class="form-control" name="email" aria-label="inputEmail" placeholder="Email" required>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                                <input type="text" class="form-control" name="address" aria-label="inputAddress" placeholder="Address" required>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                                <input type="tel" class="form-control" name="phone" aria-label="inputPhone" placeholder="Phone" required>
+                            </div>
+
+                            <div class="d-none d-sm-block col-12 col-md-6 col-lg-12">
+                                <p class="secondary">Reason for your contact</p>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="classic" name="reason" value="classic">
+                                    <label for="classic" class="secondary">Classic order</label>                    
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="catering" name="reason" value="catering">
+                                    <label for="catering" class="secondary">Catering order</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="other" name="reason" value="other">
+                                    <label for="other" class="secondary">Other</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <textarea class="form-control" rows="4" name="message" aria-label="message" placeholder="Message" required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <input class="btn btn-outline-lila" type="submit" name="send" value="Submit">
+                                <input class="btn btn-outline-lila" type="reset" value="Reset">
+                            </div>
+                            
+                            <div class="col-12"><hr class="linea-secondary"></div>  
+                        </form>
+                    </div>
+                    <div class="d-none d-md-block col-md-6 col-lg-6 container-img">
+                        <img src="img/pexels-anna-nekrashevich-7552319.jpg" alt="bg-cake">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row navbar p-4">
+            <div class="col-12 text-center social-container">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

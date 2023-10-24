@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop ~ Contact us</title>
+    <link rel="icon" href="./img/heart.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="border border-bottom">
+        <nav class="navbar navbar-expand-lg nav-underline" id="header">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="index.html">Cake Shop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link link-secondary" aria-current="page" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#catalogo-container">Our cakes</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#main-chefs">About us</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#delivery-container">Delivery</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#how-to-container">How to order</a></li>
+                  <li class="nav-item"><a class="nav-link link-secondary" href="#contact">Contact us</a></li>
+                </ul>
+              </div>
+              <form class="d-flex" role="search">
+                <button class="btn btn-outline-lila" type="submit">Login</button>
+              </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Contact us-->
+        <section class="container-fluid bg-lila container-fluid-contact" id="contact">
+            <div class="container">
+                <div class="row pb-2 align-items-center">
+                    <div class="col-12 text-center text-sm-start col-sm-5 col-lg-4">
+                        <h2 class="title secondary">Contact us</h2>
+                    </div>
+                    <div class="d-none d-sm-block col-sm-7 col-lg-8"><hr class="linea-secondary"></div>                    
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center text-sm-start">
+                        <p class="contact-text secondary">Please get in touch if you have a specific sweet request, leave your contact information and we'll get back to you shortly.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <form class="row g-3 px-2" autocomplete="on" action="registrar.php" method="post" target=""> <!-- method="post" target="_self"  pe-4-->
+
+                            <div class="col-12 col-lg-6">
+                                <input type="text" class="form-control" name="name" aria-label="inputName" placeholder="Name" required>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <input type="email" class="form-control" name="email" aria-label="inputEmail" placeholder="Email" required>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                                <input type="text" class="form-control" name="address" aria-label="inputAddress" placeholder="Address" required>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                                <input type="tel" class="form-control" name="phone" aria-label="inputPhone" placeholder="Phone" required>
+                            </div>
+
+                            <div class="d-none d-sm-block col-12 col-md-6 col-lg-12">
+                                <p class="secondary">Reason for your contact</p>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="classic" name="reason" value="classic">
+                                    <label for="classic" class="secondary">Classic order</label>                    
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="catering" name="reason" value="catering">
+                                    <label for="catering" class="secondary">Catering order</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="other" name="reason" value="other">
+                                    <label for="other" class="secondary">Other</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <textarea class="form-control" rows="4" name="message" aria-label="message" placeholder="Message" required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <input class="btn btn-outline-lila" type="submit" name="send" value="Submit">
+                                <input class="btn btn-outline-lila" type="reset" value="Reset">
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                Your message has been sent successfully!
+                            </div>
+                            
+                            <div class="col-12">
+                                <a class="btn btn-outline-lila" href="index.html">Back to Home</a>
+                            </div>
+                            <div class="col-12"><hr class="linea-secondary"></div>  
+                        </form>
+                    </div>
+                    <div class="d-none d-md-block col-md-6 col-lg-6 container-img">
+                        <img src="img/pexels-anna-nekrashevich-7552319.jpg" alt="bg-cake">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row navbar p-4">
+            <div class="col-12 text-center social-container">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

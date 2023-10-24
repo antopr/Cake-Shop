@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    color: var(--color-primary-dark);
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+:root{
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+    --color-primary: #B695BF;
+    --color-primary-light: #b695bf93;
+    --color-primary-dark: #4B343E;
+    --color-complentary:#F2AE2E;
+    --color-secondary: #F2F2F2;
+}
+body{
+    background-color: var(--color-secondary);
+}
+.padding-container{
+    padding-top: 45px;
+}
+.bg-lila{
+    background-color: var(--color-primary);
+}
+.bg-lila-light{
+    background-color: var(--color-primary-light);
+}
+.btn-outline-lila{
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
+}
+.btn-outline-lila:hover{
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+}
+.btn-outline-lila-dark{
+    color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+}
+.btn-outline-lila-dark:hover{
+    color: var(--color-primary);
+    background-color: var(--color-primary-dark);
+}
+.btn-flotante{
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid var(--color-primary);
+    background: var(--color-secondary);
+    font-size: 18px;
+    color: var(--color-primary);
+    cursor:pointer;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index: 100;
+}
+.btn-flotante:hover{
+    color: var(--color-secondary);
+    background: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+}
+.linea{
+    border: 1px solid var(--color-primary);
+}
+.linea-complementary{
+    border: 1px solid var(--color-complentary);
+}
+.linea-secondary{
+    border: 1px solid var(--color-secondary);
+}
+.secondary{
+    color: var(--color-secondary);
+}
+/*               NavBar - Logo               */
+.logo{
+    font-family: var(--font-secondary);
+    font-size: 25px;
+}
+/*               Hero               */
+.hero{
+    height: 550px;
+}
+.hero-img{
+    background-image: url("../img/cake-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    background-position: center;    
+}
+h1 i{
+    font-size: 27px;
+    color: var(--color-primary);
+}
+.hero-title{
+    font-family: var(--font-secondary);
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: var(--color-primary);
+}
+/*               Catalog               */
+.card-catalog{
+    width: 250px;
+    margin: 0px;
+    padding: 15px 5px 5px 5px;
+    border: 1px solid var(--color-primary);
+    text-align: center;
+}
+.title{
+    font-family: var(--font-secondary);
+    font-size: 42px;
+    font-weight: normal;
+}
+.card-catalog img{
+    width: 200px;
+    height: 200px;
+}
+.card-catalog img:hover{ 
+    transform: scaleX(-1);
+}
+.card-text{
+    font-size: 16px;
+    font-weight: bold;
+}
+.card-precio{
+    font-size: 15px;
+}
+.icon{
+    color: var(--color-complentary);
+    padding-left: 2px;
+}
+/*               Video               */
+.container-video{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.container-video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+/*               About               */
+.container-fluid-about{
+    padding: 80px 0;
+}
+.container-img{
+    position: relative;
+    overflow: hidden;
+    width: 550px;
+    height: 350px;
+    padding: 20px;
+}
+.container-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.chefs-about{
+    font-size: 24px;
+    font-weight: normal;
+    font-family: var(--font-secondary);
+    color: var(--color-secondary);
+}
+.chefs-name{
+    font-family: var(--font-secondary);
+    font-size: 42px;
+    font-weight: bold;
+    color: var(--color-secondary);
+    margin: 10px 0;
+}
+.chefs-bio{
+    color: var(--color-secondary);
+}
+/*               Delivery               */
+
+.delivery-terms p{
+    font-size: 16px;
+}
+/*               How to order               */
+.order-price{
+    font-size: 18px;
+    font-weight: normal;
+}
+.table-price{
+    width: 100%;
+    margin: 30px 0 15px 0;
+    text-align: center;
+    border: 1px solid var(--color-primary);
+    border-collapse: collapse;
+}
+.table-price th, .table-price td{
+    padding: 10px 0;
+    border: 1px solid var(--color-primary);    
+}
+.table-price th{
+    background-color: var(--color-primary-light);
+}
+.order-text{
+    font-size: 14px;
+    margin-bottom: 0 !important;
+}
+/*     Footer                 */
+footer{
+    border-top: 1px solid var(--color-primary);
+}
+.social-container i{
+    font-size: 16px;
+    color: var(--color-primary);
+    padding-right: 20px;
+    cursor: pointer;
+}
+.social-container i:hover{
+    color: var(--color-complentary);
+}
+.container-fluid-contact{
+    padding: 30px 0;
+}
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 992px){
+    .title{
+        font-size: 38px !important;
+    }
+    .card-catalog{
+        width: 220px;
+        margin: 0px 5px;
+    }
+    .card-catalog img{
+        width: 190px;
+        height: 190px;
+    }
+    .container-img{
+        width: 450px;
+        height: 350px;
+        padding: 15px;
+    }
+    .delivery-terms p{
+        font-size: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .title{
+        font-size: 32px !important;
+    }
+    .container-video{
+        height: 300px;
+    }
+    .container-img{
+        width: 350px;
+        height: 250px;
+        padding: 15px;
+    }
+    .chefs-about{
+        font-size: 18px;
+    }
+    .chefs-name{
+        margin: 5px 0;
+        font-size: 30px;        
+    }
+    .chefs-bio{
+        font-size: 10px;
+    }
+    .delivery-terms p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px){
+    h1 i{
+        font-size: 20px;
+    }
+    .hero{
+        height: 300px;
+    }
+    .hero-title{
+        font-size: 30px;        
+    }
+    .title{
+        font-size: 30px !important;
+    }
+    .container-video{
+        height: 200px;
+    }
+    .order-text{
+        font-size: 12px;
+    }
+}
