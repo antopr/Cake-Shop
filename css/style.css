@@ -229,7 +229,7 @@ footer{
 @media (max-width: 1200px){
     
 }
-@media (min-width: 992px) and (max-width: 1119px){
+@media (min-width: 992px) and (max-width: 1199px){
     .title{
         font-size: 38px !important;
     }
