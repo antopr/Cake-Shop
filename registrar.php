@@ -1,5 +1,5 @@
 <?php
-
+header("location:index-send.html");
 //validamos datos del servidor
 $user = "root";
 $pass = "";
@@ -43,6 +43,6 @@ if(!$connection)
         '$phone', '$reason', '$message')";
         $resultado = mysqli_query($connection,$instruccion_SQL);
 
-        header("location:index-send.html");
+        
 
 ?>
